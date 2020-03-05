@@ -1,4 +1,6 @@
 # ProjektGrupowy
 
-1. Before add documentation create an issue and branch.
-2. All documents should be at 'docs' folder
+1. Before add files create an issue and branch.
+2. Before add files to master branch create pull request.
+3. After 3 approvals you can push to master.
+4. All documents should be at 'docs' folder.
