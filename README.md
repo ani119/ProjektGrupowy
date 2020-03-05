@@ -4,3 +4,4 @@
 2. Before add files to master branch create pull request.
 3. After 3 approvals you can push to master.
 4. All documents should be at 'docs' folder.
+5. All images should be at 'images' folder.
