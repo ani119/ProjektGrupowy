@@ -13,9 +13,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-04-04T14:26:26.740+02:00
+  lastUpdatedAtString: 2020-04-04T14:33:07.048+02:00
   initializedAtString: 2020-04-04T14:23:05.462+02:00
   log:
+  - commitID: 7eace7f9d442d46df65bd36964725326a5354eb4
+    mergeA: 
+    mergeB: 
+    authorName: agnie
+    authorEmail: agnie@agnie
+    commitEmail: agnie@agnie
+    commitName: agnie
+    summary: new unity project
+    description: "- create new project\r\n- add background from unity assets"
+    timeString: 2020-04-04T14:27:16.000+02:00
+    commitTimeString: 2020-04-04T14:27:16.000+02:00
+    changes:
+    - path: "Podwodny \u015Bwiat tabliczki mno\u017Cenia\\Library\\gfu\\cache\\branches.yaml"
+      fullPath: "C:\\Users\\agnie\\Desktop\\ProjektGrupowy\\Podwodny \u015Bwiat tabliczki
+        mno\u017Cenia\\Library\\gfu\\cache\\branches.yaml"
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: "Podwodny \u015Bwiat tabliczki mno\u017Cenia\\Library\\gfu\\cache\\gitlog.yaml"
+      fullPath: "C:\\Users\\agnie\\Desktop\\ProjektGrupowy\\Podwodny \u015Bwiat tabliczki
+        mno\u017Cenia\\Library\\gfu\\cache\\gitlog.yaml"
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: "Podwodny \u015Bwiat tabliczki mno\u017Cenia\\Library\\gfu\\cache\\gittrackingstatus.yaml"
+      fullPath: "C:\\Users\\agnie\\Desktop\\ProjektGrupowy\\Podwodny \u015Bwiat tabliczki
+        mno\u017Cenia\\Library\\gfu\\cache\\gittrackingstatus.yaml"
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: "Podwodny \u015Bwiat tabliczki mno\u017Cenia\\Library\\gfu\\cache\\gituser.yaml"
+      fullPath: "C:\\Users\\agnie\\Desktop\\ProjektGrupowy\\Podwodny \u015Bwiat tabliczki
+        mno\u017Cenia\\Library\\gfu\\cache\\gituser.yaml"
+      projectPath: Library\gfu\cache\gituser.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
   - commitID: 78060cdd7b03ab40eebcc049c4f41bd8b1da65b5
     mergeA: 
     mergeB: 
