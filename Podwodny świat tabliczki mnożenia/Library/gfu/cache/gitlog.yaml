@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2020-04-04T14:26:26.740+02:00
+  initializedAtString: 2020-04-04T14:23:05.462+02:00
+  log:
+  - commitID: 78060cdd7b03ab40eebcc049c4f41bd8b1da65b5
+    mergeA: 
+    mergeB: 
+    authorName: AgaMazur
+    authorEmail: 62383701+AgaMazur@users.noreply.github.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Add files via upload
+    description: 
+    timeString: 2020-03-19T16:59:05.000+01:00
+    commitTimeString: 2020-03-19T16:59:05.000+01:00
+    changes:
+    - path: docs\wzory ETI - Umowa_student_PG_Firma (1).doc
+      fullPath: C:\Users\agnie\Desktop\ProjektGrupowy\docs\wzory ETI - Umowa_student_PG_Firma
+        (1).doc
+      projectPath: ..\docs\wzory ETI - Umowa_student_PG_Firma (1).doc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 7ea8455bcc4997207f26e8297a8924a1f16b6bcf
+    mergeA: 
+    mergeB: 
+    authorName: AgaMazur
+    authorEmail: 62383701+AgaMazur@users.noreply.github.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Add files via upload
+    description: 
+    timeString: 2020-03-19T16:57:56.000+01:00
+    commitTimeString: 2020-03-19T16:57:56.000+01:00
+    changes:
+    - path: docs\Harmonogram strategiczny.doc
+      fullPath: C:\Users\agnie\Desktop\ProjektGrupowy\docs\Harmonogram strategiczny.doc
+      projectPath: ..\docs\Harmonogram strategiczny.doc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: docs\Plakat.doc
+      fullPath: C:\Users\agnie\Desktop\ProjektGrupowy\docs\Plakat.doc
+      projectPath: ..\docs\Plakat.doc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: "docs\\Sprawozdanie ko\u0144cowe.doc"
+      fullPath: "C:\\Users\\agnie\\Desktop\\ProjektGrupowy\\docs\\Sprawozdanie ko\u0144cowe.doc"
+      projectPath: "..\\docs\\Sprawozdanie ko\u0144cowe.doc"
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: "docs\\Sprawozdanie przej\u015Bciowe.doc"
+      fullPath: "C:\\Users\\agnie\\Desktop\\ProjektGrupowy\\docs\\Sprawozdanie przej\u015Bciowe.doc"
+      projectPath: "..\\docs\\Sprawozdanie przej\u015Bciowe.doc"
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: docs\Wstepna dokumentacja techniczna.doc
+      fullPath: C:\Users\agnie\Desktop\ProjektGrupowy\docs\Wstepna dokumentacja techniczna.doc
+      projectPath: ..\docs\Wstepna dokumentacja techniczna.doc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: docs\Zlecenie projektowe.doc
+      fullPath: C:\Users\agnie\Desktop\ProjektGrupowy\docs\Zlecenie projektowe.doc
+      projectPath: ..\docs\Zlecenie projektowe.doc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 029e71e5b4a410f0be9626eac028b6e39144897b
+    mergeA: 
+    mergeB: 
+    authorName: ani119
+    authorEmail: karolina_makuch_email@wp.pl
+    commitEmail: karolina_makuch_email@wp.pl
+    commitName: ani119
+    summary: Create requirements.docx
+    description: 
+    timeString: 2020-03-18T15:58:52.000+01:00
+    commitTimeString: 2020-03-18T15:58:52.000+01:00
+    changes:
+    - path: docs\requirements.docx
+      fullPath: C:\Users\agnie\Desktop\ProjektGrupowy\docs\requirements.docx
+      projectPath: ..\docs\requirements.docx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: fc95b773308ea341cd7429f06eecdb0afe3f0a42
+    mergeA: 
+    mergeB: 
+    authorName: ani119
+    authorEmail: karolina_makuch_email@wp.pl
+    commitEmail: karolina_makuch_email@wp.pl
+    commitName: ani119
+    summary: Update README.md
+    description: 
+    timeString: 2020-03-05T21:11:01.000+01:00
+    commitTimeString: 2020-03-05T21:11:01.000+01:00
+    changes:
+    - path: README.md
+      fullPath: C:\Users\agnie\Desktop\ProjektGrupowy\README.md
+      projectPath: ..\README.md
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 9ca46454ae4c5994cbd19e03360d8eb512e55e28
+    mergeA: 
+    mergeB: 
+    authorName: ani119
+    authorEmail: karolina_makuch_email@wp.pl
+    commitEmail: karolina_makuch_email@wp.pl
+    commitName: ani119
+    summary: Update README.md
+    description: 
+    timeString: 2020-03-05T21:05:46.000+01:00
+    commitTimeString: 2020-03-05T21:05:46.000+01:00
+    changes:
+    - path: README.md
+      fullPath: C:\Users\agnie\Desktop\ProjektGrupowy\README.md
+      projectPath: ..\README.md
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 08a26f20985b7394a02c14ec3ae2e645eb815818
+    mergeA: 
+    mergeB: 
+    authorName: ani119
+    authorEmail: karolina_makuch_email@wp.pl
+    commitEmail: karolina_makuch_email@wp.pl
+    commitName: ani119
+    summary: Update README.md
+    description: 
+    timeString: 2020-03-05T20:49:38.000+01:00
+    commitTimeString: 2020-03-05T20:49:38.000+01:00
+    changes:
+    - path: README.md
+      fullPath: C:\Users\agnie\Desktop\ProjektGrupowy\README.md
+      projectPath: ..\README.md
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: cdc885c03e85e481aa89a54eb8d5f7f4de63558b
+    mergeA: 
+    mergeB: 
+    authorName: ani119
+    authorEmail: karolina_makuch_email@wp.pl
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Initial commit
+    description: 
+    timeString: 2020-03-05T20:38:13.000+01:00
+    commitTimeString: 2020-03-05T20:38:13.000+01:00
+    changes:
+    - path: README.md
+      fullPath: C:\Users\agnie\Desktop\ProjektGrupowy\README.md
+      projectPath: ..\README.md
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
