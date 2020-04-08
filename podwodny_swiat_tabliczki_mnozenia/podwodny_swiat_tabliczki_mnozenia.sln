@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "podwodny_swiat_tabliczki_mnozenia", "podwodny_swiat_tabliczki_mnozenia.csproj", "{AF38E0B4-0D38-EA12-1AF5-E88198309B1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF38E0B4-0D38-EA12-1AF5-E88198309B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF38E0B4-0D38-EA12-1AF5-E88198309B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF38E0B4-0D38-EA12-1AF5-E88198309B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF38E0B4-0D38-EA12-1AF5-E88198309B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
