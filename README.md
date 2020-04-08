@@ -1,4 +1,5 @@
 # ProjektGrupowy
+Remember to update Unity - always we should have the newest version.
 
 1. Before add files create an issue and branch.
 2. Before add files to master branch create pull request.
