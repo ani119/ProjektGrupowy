@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ButtonHandler.cs" />
     <Compile Include="Assets\Scritps\FishController.cs" />
+    <Compile Include="Assets\Scritps\ShoalController.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/STUDIA/ProjektGrupowy/podwodny_swiat_tabliczki_mnozenia/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
