@@ -63,9 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ButtonHandler.cs" />
-    <Compile Include="Assets\Scritps\FishController.cs" />
-    <Compile Include="Assets\Scritps\ShoalController.cs" />
+    <Compile Include="Assets\Scritps\Components\Modal.cs" />
+    <Compile Include="Assets\Scritps\Controllers\FishController.cs" />
+    <Compile Include="Assets\Scritps\Controllers\GameController.cs" />
+    <Compile Include="Assets\Scritps\Controllers\ShoalController.cs" />
+    <Compile Include="Assets\Scritps\Handlers\ButtonHandler.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/STUDIA/ProjektGrupowy/podwodny_swiat_tabliczki_mnozenia/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
