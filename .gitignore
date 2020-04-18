@@ -9,6 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+Assets/AssetStoreTools*
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -68,18 +69,6 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-podwodny_swiat_tabliczki_mnozenia/Library/ArtifactDB
-podwodny_swiat_tabliczki_mnozenia/Library/Artifacts/01/015d2c67c9f46daa47e6d5e8ca81befe
-podwodny_swiat_tabliczki_mnozenia/Library/Artifacts/0a/0a78be2005a0a0fe238ccf3a10f98bdc
-podwodny_swiat_tabliczki_mnozenia/Library/Artifacts/0d/0d4e1127a6fd36e0f8ec3dae1c588515
-podwodny_swiat_tabliczki_mnozenia/Library/Artifacts/14/140d980e9f8b943baf0e68d8622044e7
-podwodny_swiat_tabliczki_mnozenia/Library/Artifacts/3f/3f6631f7e243e061b1612c1f5c7d2556
-podwodny_swiat_tabliczki_mnozenia/Library/Artifacts/61/61509f1d5d273e722b02f19528d421df
-podwodny_swiat_tabliczki_mnozenia/Library/Artifacts/72/72201865e86484d644cfd5b0f88b695e
-podwodny_swiat_tabliczki_mnozenia/Library/Artifacts/78/78bca5db29c52d25841ca174ac0ccd36
-podwodny_swiat_tabliczki_mnozenia/Library/Artifacts/97/97623150a0e800432ae164e4e7152e4f
-podwodny_swiat_tabliczki_mnozenia/Library/Artifacts/e7/e798eb5fe5aabd7e42e32494bd078006
-podwodny_swiat_tabliczki_mnozenia/Library/CurrentLayout-default.dwlt
-podwodny_swiat_tabliczki_mnozenia/Library/LastSceneManagerSetup.txt
-podwodny_swiat_tabliczki_mnozenia/Library/shadercompiler-UnityShaderCompiler.exe0.log
-podwodny_swiat_tabliczki_mnozenia/Library/SourceAssetDB
+
+serial: menhunt ana bomber
+roma
