@@ -1,0 +1,46 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Modal : MonoBehaviour
+{
+    void Start()
+    {
+        hideModal();
+        setBackgroundColor();
+    }
+
+    public void setMessage(string userName, bool isPositive)
+    {
+        setModalTextContent(userName, isPositive);
+        setModalTextColor(isPositive);
+    }
+    public void showModal()
+    {
+        this.gameObject.SetActive(true);
+
+    }
+    public void hideModal()
+    {
+        this.gameObject.SetActive(false);
+    }
+
+    private void setModalTextContent(string userName, bool isPositive)
+    {
+        if (isPositive) GetComponentInChildren<Text>().text = "GRATULACJE " + userName.ToUpper() + " !";
+        else GetComponentInChildren<Text>().text = userName.ToUpper()+" SPRÓBUJ PONOWNIE"; 
+    }
+
+    private void setModalTextColor(bool isPositive)
+    {
+        if (isPositive) GetComponentInChildren<Text>().color = new Color(0.1f, 0.7f, 0.1f, 0.9f);
+        else GetComponentInChildren<Text>().color = Color.red;
+    }
+
+    private void setBackgroundColor()
+    {
+        GetComponentInChildren<Image>().color=new Color(0.5f, 0.5f, 0.5f, 0.3f);
+    }
+
+}
