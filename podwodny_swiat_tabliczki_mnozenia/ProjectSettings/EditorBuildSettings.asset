@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 7209e7898c436654baa10cfee6f0d7b3
+  - enabled: 1
+    path: Assets/Scenes/NameScene.unity
+    guid: 60644d8c758d9cb4ebe336e3da5ef19d
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 605ecb7a24f5c2a45b6fe3345683efdb
+  - enabled: 1
+    path: Assets/Scenes/FishGame.unity
+    guid: c0f52c5c810bdd740a32b8222fe2ddc3
   m_configObjects: {}
