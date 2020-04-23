@@ -14,6 +14,5 @@ public class GetPlayerName : MonoBehaviour
         playerName = inputField.GetComponent<Text>().text;
         Debug.Log( "Witaj " + playerName + " w podwodnym świecie tabliczki mnożenia!");
         SceneManager.LoadScene("Menu");
-
     }
 }
