@@ -621,7 +621,7 @@ GameObject:
   - component: {fileID: 389638248}
   - component: {fileID: 389638249}
   m_Layer: 0
-  m_Name: GamaManager
+  m_Name: GameMenager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -639,12 +639,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5fe3669fe455c549ace4803ddc0d2f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 0
-  y: 0
-  rownanie: 
-  napisRownanie: {fileID: 1744686146}
-  odpowiedz: {fileID: 1453974562}
-  blad: {fileID: 563043065}
+  showEquation: {fileID: 1744686146}
+  answer: {fileID: 1453974562}
+  error: {fileID: 563043065}
 --- !u!222 &389638249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -684,7 +681,7 @@ GameObject:
   - component: {fileID: 563043066}
   - component: {fileID: 563043065}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Error
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -721,7 +718,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: informacja
+  m_Text: 
 --- !u!222 &563043066
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -746,8 +743,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -30, y: -52}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -2.1, y: -43.6}
+  m_SizeDelta: {x: 201.1, y: 61.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &564863685
 GameObject:
@@ -1882,7 +1879,7 @@ GameObject:
   - component: {fileID: 1453974560}
   - component: {fileID: 1453974562}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: Answer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2313,7 +2310,7 @@ GameObject:
   - component: {fileID: 1744686145}
   - component: {fileID: 1744686146}
   m_Layer: 5
-  m_Name: Rownanie
+  m_Name: Equation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2377,7 +2374,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: przyklad
+  m_Text: 
 --- !u!1 &1827907503
 GameObject:
   m_ObjectHideFlags: 0
