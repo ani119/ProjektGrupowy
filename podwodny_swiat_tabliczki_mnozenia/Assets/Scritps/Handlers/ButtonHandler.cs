@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ButtonHandler : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class ButtonHandler : MonoBehaviour {
         if(EventSystem.current.currentSelectedGameObject.name == "play_button")
         {
             Debug.Log("GRAJ");
+            SceneManager.LoadScene("NameScene");
         }
         else if (EventSystem.current.currentSelectedGameObject.name == "exit_button")
         {
@@ -19,3 +21,5 @@ public class ButtonHandler : MonoBehaviour {
         }
     }
 }
+
+
