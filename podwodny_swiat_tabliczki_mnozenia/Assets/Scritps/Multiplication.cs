@@ -5,26 +5,23 @@ using UnityEngine.UI;
 
 public class Multiplication : MonoBehaviour
 {
-    private int multiplicand ;
-    private int multiplier;
-    private string equation;
     public Text showEquation;
     public InputField answer;
     public Text error;
-   
+    private int multiplicand ;
+    private int multiplier;
+    private string equation;
     // Start is called before the first frame update
     void Start()
     {
         error.text = "";
         RandomEquation();
     }
-
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
-        {
-            
+        { 
             CheckAnswer();
         }
     }
@@ -41,7 +38,6 @@ public class Multiplication : MonoBehaviour
         {
             error.text = "Bardzo dobrze! Następne równanie.";
             RandomEquation();
-
         }
         else
         {
