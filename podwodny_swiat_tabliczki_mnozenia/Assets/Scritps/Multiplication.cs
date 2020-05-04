@@ -37,6 +37,7 @@ public class Multiplication : MonoBehaviour
         if (answer.text == (multiplicand * multiplier).ToString())
         {
             error.text = "Bardzo dobrze! Następne równanie.";
+            GameController.clearWater();
             RandomEquation();
         }
         else
