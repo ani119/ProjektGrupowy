@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour
 
     private void modalControl()
     {
-        modal.setMessage( isModalPositive);
+        modal.setMessage(userName, isModalPositive);
         if (Input.GetKeyDown(KeyCode.Return))
         {
             modal.showModal();
@@ -32,6 +32,15 @@ public class GameController : MonoBehaviour
         {
             modal.hideModal();
 
+        }
+    }
+
+    public static void clearWater()
+    {
+        Transform shoalCopies = GameObject.Find("Canvas/Shoals/ShoalCopies").transform;
+        foreach (Transform shoal in shoalCopies)
+        {
+            GameObject.Destroy(shoal.gameObject);
         }
     }
 }

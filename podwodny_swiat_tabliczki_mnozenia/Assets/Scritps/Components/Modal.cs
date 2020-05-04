@@ -11,9 +11,9 @@ public class Modal : MonoBehaviour
         setBackgroundColor();
     }
 
-    public void setMessage( bool isPositive)
+    public void setMessage(string userName, bool isPositive)
     {
-        setModalTextContent( isPositive);
+        setModalTextContent(userName, isPositive);
         setModalTextColor(isPositive);
     }
     public void showModal()
@@ -26,10 +26,10 @@ public class Modal : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 
-    private void setModalTextContent( bool isPositive)
+    private void setModalTextContent(string userName, bool isPositive)
     {
-        if (isPositive) GetComponentInChildren<Text>().text = "GRATULACJE " + Globals.playerName.ToUpper() + " !";
-        else GetComponentInChildren<Text>().text = Globals.playerName.ToUpper()+" SPRÓBUJ PONOWNIE"; 
+        if (isPositive) GetComponentInChildren<Text>().text = "GRATULACJE " + userName.ToUpper() + " !";
+        else GetComponentInChildren<Text>().text = userName.ToUpper()+" SPRÓBUJ PONOWNIE"; 
     }
 
     private void setModalTextColor(bool isPositive)

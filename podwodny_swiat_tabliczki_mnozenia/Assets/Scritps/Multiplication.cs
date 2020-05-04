@@ -36,12 +36,13 @@ public class Multiplication : MonoBehaviour
     {
         if (answer.text == (multiplicand * multiplier).ToString())
         {
-            error.text = "Bardzo dobrze "+Globals.playerName+" ! Następne równanie.";
+            error.text = "Bardzo dobrze! Następne równanie.";
+            GameController.clearWater();
             RandomEquation();
         }
         else
         {
-            error.text = "Zła odpowiedź " + Globals.playerName + ". Spróbuj jeszcze raz!";
+            error.text = "Zła odpowiedź. Spróbuj jeszcze raz!";
         }
     }
 }
