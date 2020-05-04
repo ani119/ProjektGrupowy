@@ -6,7 +6,9 @@ public class RatingModal : MonoBehaviour
 {
     public Text text;
     public Button closeButton;
-
+    public GameObject star1;
+    public GameObject star2;
+    public GameObject star3;
     private int total = 0;
     private int tries = 0;
 
@@ -35,12 +37,27 @@ public class RatingModal : MonoBehaviour
     {
         this.tries = tries;
         this.total = total;
-
-        string s = CalculateAccuracy() + "%";
-        text.text = s;
-
+        int accuracy = CalculateAccuracy();
+        star1.gameObject.SetActive(true);
+        star2.gameObject.SetActive(false);
+        star3.gameObject.SetActive(false);
         this.gameObject.SetActive(true);
+        if (accuracy >= 50)
+        {
+            star2.gameObject.SetActive(true);
+            text.text = "Idzie Ci coraz lepiej!";
+            if (accuracy >= 80)
+            {
+                star3.gameObject.SetActive(true);
+                text.text = "Super! Oby tak dalej!";
+            }
+        }
+        else
+        {
+            text.text = "Próbuj dalej!";
+        }
     }
+
 
     public void HideModal()
     {

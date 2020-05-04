@@ -38,7 +38,7 @@ public class Multiplication : MonoBehaviour
         equation = multiplicand.ToString() + " * " + multiplier.ToString() + "=";
         showEquation.text = equation;
 
-        if(totalEquations > 0 && totalEquations % 2 == 0)
+        if(totalEquations > 0 && totalEquations % 10 == 0)
         {
             ratingModal.ShowRating(totalAnswerTries, totalEquations);
         }
