@@ -34,4 +34,13 @@ public class GameController : MonoBehaviour
 
         }
     }
+
+    public static void clearWater()
+    {
+        Transform shoalCopies = GameObject.Find("Canvas/Shoals/ShoalCopies").transform;
+        foreach (Transform shoal in shoalCopies)
+        {
+            GameObject.Destroy(shoal.gameObject);
+        }
+    }
 }
