@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour
 
     private void modalControl()
     {
-        modal.setMessage(userName, isModalPositive);
+        modal.setMessage(Player.name, isModalPositive);
         if (Input.GetKeyDown(KeyCode.Return))
         {
             modal.showModal();
