@@ -11,9 +11,9 @@ public class Modal : MonoBehaviour
         setBackgroundColor();
     }
 
-    public void setMessage(string userName, bool isPositive)
+    public void setMessage(string playerName, bool isPositive)
     {
-        setModalTextContent(userName, isPositive);
+        setModalTextContent(playerName, isPositive);
         setModalTextColor(isPositive);
     }
     public void showModal()

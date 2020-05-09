@@ -52,7 +52,7 @@ public class Multiplication : MonoBehaviour
 
         if (answer.text == (multiplicand * multiplier).ToString())
         {
-            error.text = "Bardzo dobrze! Następne równanie.";
+            error.text = "Bardzo dobrze " + Player.name +" ! Następne równanie.";
             GameController.clearWater();
             RandomEquation();
         }
