@@ -10,11 +10,13 @@ public class Shoal : MonoBehaviour
     public GameObject obj;
     int index = 0;
     Vector3 mousePos;
+    private static bool ifExist;
 
     private void Start()
     {
         obj = gameObject;
         newposition = transform.position;
+        ifExist = true;
     }
 
     public void BeginDrag()
@@ -35,8 +37,16 @@ public class Shoal : MonoBehaviour
         mousePos = Input.mousePosition;
         mousePos.z = 2.0f;
         newposition = mousePos;
-        if (obj == this.gameObject) obj.transform.rotation = Quaternion.identity;
-        obj.transform.position = newposition;
+        if (ifExist && obj == this.gameObject) obj.transform.rotation = Quaternion.identity;
+        if (ifExist) obj.transform.position = newposition;
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "RecycleBin")
+        {
+            DeleteShoal();
+        }
     }
 
     private void CopyShoal()
@@ -46,5 +56,11 @@ public class Shoal : MonoBehaviour
         obj.name = this.name + "_" + index.ToString();
         obj.transform.SetParent(  GameObject.Find("Canvas/Shoals/ShoalCopies").transform,false);
         index++;
+    }
+
+    private void DeleteShoal()
+    {
+        GameObject.Destroy(this.gameObject);
+        ifExist = false;
     }
 }
