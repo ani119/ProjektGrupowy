@@ -19,6 +19,10 @@ public class ButtonHandler : MonoBehaviour {
         {
             Application.Quit();
         }
+        if (EventSystem.current.currentSelectedGameObject.name == "BackToMenu")
+        {
+            SceneManager.LoadScene("MainScene");
+        }
     }
 }
 
