@@ -37,6 +37,15 @@ public class Shoal : MonoBehaviour
         newposition = mousePos;
         if (obj == this.gameObject) obj.transform.rotation = Quaternion.identity;
         obj.transform.position = newposition;
+
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag=="RecycleBin")
+        {
+            DeleteShoal();
+        }
     }
 
     private void CopyShoal()
@@ -46,5 +55,10 @@ public class Shoal : MonoBehaviour
         obj.name = this.name + "_" + index.ToString();
         obj.transform.SetParent(  GameObject.Find("Canvas/Shoals/ShoalCopies").transform,false);
         index++;
+    }
+
+    private void DeleteShoal()
+    {
+        GameObject.Destroy(this.gameObject);
     }
 }
