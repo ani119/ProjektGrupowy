@@ -7,10 +7,9 @@ public class Multiplication : MonoBehaviour
 {
     public Text showEquation;
     public InputField answer;
-    public Text error;
     public RatingModal ratingModal;
 
-    private int multiplicand ;
+    private int multiplicand;
     private int multiplier;
     private string equation;
 
@@ -18,16 +17,17 @@ public class Multiplication : MonoBehaviour
     public int totalAnswerTries = 0;
 
     // Start is called before the first frame update
+    GameController GameController;
     void Start()
     {
-        error.text = "";
         RandomEquation();
+        GameController = FindObjectOfType<GameController>();
     }
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
-        { 
+        {
             CheckAnswer();
         }
     }
@@ -38,7 +38,7 @@ public class Multiplication : MonoBehaviour
         equation = multiplicand.ToString() + " * " + multiplier.ToString() + "=";
         showEquation.text = equation;
 
-        if(totalEquations > 0 && totalEquations % 10 == 0)
+        if (totalEquations > 0 && totalEquations % 10 == 0)
         {
             ratingModal.ShowRating(totalAnswerTries, totalEquations);
         }
@@ -52,13 +52,13 @@ public class Multiplication : MonoBehaviour
 
         if (answer.text == (multiplicand * multiplier).ToString())
         {
-            error.text = "Bardzo dobrze " + Player.name +" ! Następne równanie.";
+            GameController.isModalPositive = true;
             GameController.clearWater();
             RandomEquation();
         }
         else
         {
-            error.text = "Zła odpowiedź. Spróbuj jeszcze raz!";
+            GameController.isModalPositive = false;
         }
     }
 }
