@@ -214,7 +214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &27272148
 RectTransform:
   m_ObjectHideFlags: 0
@@ -533,7 +533,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 129861034}
-          m_MethodName: BeginDrag
+          m_MethodName: BeginDragAndCopyShoal
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005ae855e3fbd1e42b1f15d0a62f0110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8055432591447448053, guid: fcaff37b995dd2140993329bea1f6a14, type: 3}
+  prefab: {fileID: 2229296672757962270, guid: 3b1423d7c5fd9dd4884391c8875adc4e, type: 3}
   newposition: {x: 0, y: 0, z: 0}
   obj: {fileID: 0}
 --- !u!114 &129861035
@@ -621,7 +621,7 @@ GameObject:
   m_Layer: 5
   m_Name: ShoalCopies
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -641,8 +641,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 150}
+  m_SizeDelta: {x: 792.84, y: 449.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &306577845
 GameObject:
@@ -778,7 +778,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 364018770}
-          m_MethodName: BeginDrag
+          m_MethodName: BeginDragAndCopyShoal
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -815,7 +815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005ae855e3fbd1e42b1f15d0a62f0110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5288462579733246701, guid: 53f3ccf162ca1e2409977ad6110d0d5c, type: 3}
+  prefab: {fileID: 6727496203824109727, guid: dc140f2449d57f941bb8d0a6a4ddb8e4, type: 3}
   newposition: {x: 0, y: 0, z: 0}
   obj: {fileID: 0}
 --- !u!114 &364018771
@@ -1203,7 +1203,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 564863688}
-          m_MethodName: BeginDrag
+          m_MethodName: BeginDragAndCopyShoal
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1240,7 +1240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005ae855e3fbd1e42b1f15d0a62f0110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5918326247422934665, guid: 0dce94cd7fcbc414bb1db7c8d5702192, type: 3}
+  prefab: {fileID: 2493257729023469392, guid: dcad6c7aed3b9474dbd30f0bcb8ec3b2, type: 3}
   newposition: {x: 0, y: 0, z: 0}
   obj: {fileID: 0}
 --- !u!114 &564863689
@@ -1372,7 +1372,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 586579578}
-          m_MethodName: BeginDrag
+          m_MethodName: BeginDragAndCopyShoal
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1409,7 +1409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005ae855e3fbd1e42b1f15d0a62f0110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3770475584263003533, guid: 46d886b0263e22947a067617b05c3589, type: 3}
+  prefab: {fileID: 5259105145628643652, guid: c21148e329cf68c4d8d917f59b5ae5b6, type: 3}
   newposition: {x: 0, y: 0, z: 0}
   obj: {fileID: 0}
 --- !u!1 &599451314
@@ -1469,7 +1469,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 599451317}
-          m_MethodName: BeginDrag
+          m_MethodName: BeginDragAndCopyShoal
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1506,7 +1506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005ae855e3fbd1e42b1f15d0a62f0110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3619936976627635543, guid: 68f30368e234f33488174bb10d9f4016, type: 3}
+  prefab: {fileID: 6284782923781939509, guid: 3d6cc90cedc291e4fb4488bb85e16dfc, type: 3}
   newposition: {x: 0, y: 0, z: 0}
   obj: {fileID: 0}
 --- !u!114 &599451318
@@ -1648,7 +1648,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 750963045}
-          m_MethodName: BeginDrag
+          m_MethodName: BeginDragAndCopyShoal
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1685,7 +1685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005ae855e3fbd1e42b1f15d0a62f0110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8681725289481473744, guid: 8bd234a6ba73dd549ab7cb62e71899e0, type: 3}
+  prefab: {fileID: 1024786228253717943, guid: 3ccbde79b13e30845b15d87af88e3e48, type: 3}
   newposition: {x: 0, y: 0, z: 0}
   obj: {fileID: 0}
 --- !u!114 &750963046
@@ -1724,6 +1724,69 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750963042}
   m_CullTransparentMesh: 0
+--- !u!1 &958022202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 958022203}
+  - component: {fileID: 958022204}
+  m_Layer: 4
+  m_Name: RecycleBin
+  m_TagString: RecycleBin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &958022203
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958022202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.312139}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1526841637}
+  m_Father: {fileID: 2034697457}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 342, y: 154}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!61 &958022204
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958022202}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -6.7929497, y: -23.365952}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 102.858635, y: 94.29573}
+  m_EdgeRadius: 0
 --- !u!1 &966893869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2185,7 +2248,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1182321356}
-          m_MethodName: BeginDrag
+          m_MethodName: BeginDragAndCopyShoal
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2222,7 +2285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005ae855e3fbd1e42b1f15d0a62f0110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 941261904547837712, guid: 15c7ec220bafc7c41b6fa8f469e91a09, type: 3}
+  prefab: {fileID: 2087801343530012642, guid: 2fb1a58ddaf8eaf4aa5f530681def3bd, type: 3}
   newposition: {x: 0, y: 0, z: 0}
   obj: {fileID: 0}
 --- !u!114 &1182321357
@@ -2395,7 +2458,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1388798551}
-          m_MethodName: BeginDrag
+          m_MethodName: BeginDragAndCopyShoal
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2432,7 +2495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005ae855e3fbd1e42b1f15d0a62f0110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8735628557555924510, guid: 9633c880273cf064a8aa1c75445e2eba, type: 3}
+  prefab: {fileID: 7490168426378420738, guid: 13276af5d15a1cc4e86f9d2aef79a57b, type: 3}
   newposition: {x: 0, y: 0, z: 0}
   obj: {fileID: 0}
 --- !u!114 &1388798552
@@ -2646,7 +2709,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1437796880}
-          m_MethodName: BeginDrag
+          m_MethodName: BeginDragAndCopyShoal
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2683,7 +2746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005ae855e3fbd1e42b1f15d0a62f0110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3364257814091254301, guid: 9cf9cec099ccbb347aed44b5adef4d3f, type: 3}
+  prefab: {fileID: 584928231335016678, guid: fa18670a49efe7747a4b0457ff0efc7f, type: 3}
   newposition: {x: 0, y: 0, z: 0}
   obj: {fileID: 0}
 --- !u!114 &1437796881
@@ -2944,6 +3007,79 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1526841636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526841637}
+  - component: {fileID: 1526841639}
+  - component: {fileID: 1526841638}
+  m_Layer: 4
+  m_Name: Image
+  m_TagString: RecycleBin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1526841637
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526841636}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 958022203}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1526841638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526841636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3be80395f95ffb04694877d1fa859186, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1526841639
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526841636}
+  m_CullTransparentMesh: 0
 --- !u!1 &1595676709
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,7 +3214,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1720088612}
-          m_MethodName: BeginDrag
+          m_MethodName: BeginDragAndCopyShoal
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3115,7 +3251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005ae855e3fbd1e42b1f15d0a62f0110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 9222094466903129457, guid: 4c14535b39e47fa4a91ef5446cc91860, type: 3}
+  prefab: {fileID: 6295105992884459303, guid: b9a2fbf98e302944c9b9e4126d53b190, type: 3}
   newposition: {x: 0, y: 0, z: 0}
   obj: {fileID: 0}
 --- !u!114 &1720088613
@@ -3612,7 +3748,7 @@ RectTransform:
   - {fileID: 1453974559}
   - {fileID: 671961922}
   - {fileID: 27272148}
-  - {fileID: 977923735}
+  - {fileID: 958022203}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
