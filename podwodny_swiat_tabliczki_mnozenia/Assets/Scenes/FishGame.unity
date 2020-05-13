@@ -363,6 +363,7 @@ MonoBehaviour:
   modal: {fileID: 2067929549}
   userName: Karolina
   isModalPositive: 1
+  multiplication: {fileID: 0}
 --- !u!4 &52046698
 Transform:
   m_ObjectHideFlags: 0
@@ -886,7 +887,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showEquation: {fileID: 1744686146}
   answer: {fileID: 1453974562}
-  error: {fileID: 563043065}
   ratingModal: {fileID: 27272149}
   totalEquations: 0
   totalAnswerTries: 0
@@ -1118,7 +1118,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Zamknij
+  m_Text: 
 --- !u!222 &563043066
 CanvasRenderer:
   m_ObjectHideFlags: 0

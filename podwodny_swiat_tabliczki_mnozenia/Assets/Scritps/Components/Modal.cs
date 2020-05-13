@@ -28,7 +28,10 @@ public class Modal : MonoBehaviour
 
     private void setModalTextContent(string userName, bool isPositive)
     {
-        if (isPositive) GetComponentInChildren<Text>().text = "GRATULACJE " + userName.ToUpper() + " !";
+        if (isPositive)
+        {
+            GetComponentInChildren<Text>().text = "GRATULACJE " + userName.ToUpper() + " !";
+        }
         else GetComponentInChildren<Text>().text = userName.ToUpper()+" SPRÓBUJ PONOWNIE"; 
     }
 

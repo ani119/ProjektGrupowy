@@ -8,33 +8,29 @@ public class GameController : MonoBehaviour
     public Modal modal;
     public string userName;
     public bool isModalPositive;
-
+    bool isWaitingForAnswer = true;
     void Start()
     {
         
     }
-
     void Update()
     {
-        modalControl();
-        
+        ModalControl();
     }
-
-    private void modalControl()
+   
+    public void HideModal()
+    {
+        modal.hideModal();
+        isWaitingForAnswer = true;
+    }
+    private void ModalControl()
     {
         modal.setMessage(Player.name, isModalPositive);
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            modal.showModal();
-
-        }
-        if (Input.GetKeyDown(KeyCode.Mouse0)) //left mouse button
-        {
-            modal.hideModal();
-
-        }
+        if (Input.GetKeyDown(KeyCode.Return) && isWaitingForAnswer) 
+            {
+             modal.showModal();
+            }
     }
-
     public static void clearWater()
     {
         Transform shoalCopies = GameObject.Find("Canvas/Shoals/ShoalCopies").transform;
