@@ -37,7 +37,7 @@ public class Modal : MonoBehaviour
 
     private void setModalTextColor(bool isPositive)
     {
-        if (isPositive) GetComponentInChildren<Text>().color = new Color(0.1f, 0.7f, 0.1f, 0.9f);
+        if (isPositive) GetComponentInChildren<Text>().color = new Color(0.0f, 0.0f, 0.9f, 0.9f); 
         else GetComponentInChildren<Text>().color = Color.red;
     }
 

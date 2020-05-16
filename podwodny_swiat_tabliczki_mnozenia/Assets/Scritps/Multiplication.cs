@@ -35,16 +35,17 @@ public class Multiplication : MonoBehaviour
     {
         multiplicand = Random.Range(1, 11);
         multiplier = Random.Range(1, 11);
-        equation = multiplicand.ToString() + " * " + multiplier.ToString() + "=";
+        equation = multiplicand.ToString() + " x " + multiplier.ToString() + " = ";
         showEquation.text = equation;
 
-        if (totalEquations > 0 && totalEquations % 10 == 0)
+        if (totalEquations > 0 && totalEquations % 2 == 0)
         {
             ratingModal.ShowRating(totalAnswerTries, totalEquations);
         }
 
         totalEquations++;
     }
+    
     public void CheckAnswer()
     {
         totalAnswerTries++;
