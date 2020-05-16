@@ -32,12 +32,12 @@ public class Modal : MonoBehaviour
         {
             GetComponentInChildren<Text>().text = "GRATULACJE " + userName.ToUpper() + " !";
         }
-        else GetComponentInChildren<Text>().text = userName.ToUpper()+" SPRÓBUJ PONOWNIE"; 
+        else GetComponentInChildren<Text>().text = userName.ToUpper()+", SPRÓBUJ PONOWNIE"; 
     }
 
     private void setModalTextColor(bool isPositive)
     {
-        if (isPositive) GetComponentInChildren<Text>().color = new Color(0.0f, 0.0f, 0.9f, 0.9f); 
+        if (isPositive) GetComponentInChildren<Text>().color = new Color(0.1f, 0.5f, 0.0f, 1.0f); 
         else GetComponentInChildren<Text>().color = Color.red;
     }
 
