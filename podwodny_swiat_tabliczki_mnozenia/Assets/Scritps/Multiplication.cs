@@ -68,6 +68,5 @@ public class Multiplication : MonoBehaviour
         {
             GameController.isModalPositive = false;
         }
-        answer.text = "";
     }
 }
