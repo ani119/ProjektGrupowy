@@ -1,14 +1,11 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Modal : MonoBehaviour
 {
-    public bool modalIsShowed;
-    public InputField answer;
-    Multiplication multiplication;
-    void Awake()
+    void Start()
     {
         hideModal();
         setBackgroundColor();
@@ -46,12 +43,7 @@ public class Modal : MonoBehaviour
 
     private void setBackgroundColor()
     {
-        GetComponentInChildren<Image>().color = new Color(0.5f, 0.5f, 0.5f, 0.3f);
-    }
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        hideModal();
-        answer.text = "";
+        GetComponentInChildren<Image>().color=new Color(0.5f, 0.5f, 0.5f, 0.3f);
     }
 
 }
