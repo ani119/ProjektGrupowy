@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Modal : MonoBehaviour, IPointerClickHandler
 {
     public bool modalIsShowed;
+    public InputField answer;
     Multiplication multiplication;
     void Awake()
     {
@@ -55,12 +56,13 @@ public class Modal : MonoBehaviour, IPointerClickHandler
 
     private void setBackgroundColor()
     {
-        GetComponentInChildren<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+        GetComponentInChildren<Image>().color = new Color(0.5f, 0.5f, 0.5f, 0.3f);
     }
     public void OnPointerClick(PointerEventData eventData)
     {
 
         hideModal();
+        answer.text = "";
     }
 
 }
