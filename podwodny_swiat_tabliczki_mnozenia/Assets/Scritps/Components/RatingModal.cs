@@ -11,6 +11,7 @@ public class RatingModal : MonoBehaviour
     public GameObject star3;
     private int total = 0;
     private int tries = 0;
+    public bool ratingModalIsShowed;
 
     // Use this for initialization
     void Start()
@@ -35,13 +36,14 @@ public class RatingModal : MonoBehaviour
 
     public void ShowRating(int tries, int total)
     {
+        ratingModalIsShowed = true;
         this.tries = tries;
         this.total = total;
         int accuracy = CalculateAccuracy();
         star1.gameObject.SetActive(true);
         star2.gameObject.SetActive(false);
         star3.gameObject.SetActive(false);
-        this.gameObject.SetActive(true);
+        this.transform.GetChild(0).gameObject.SetActive(true);
         if (accuracy >= 50)
         {
             star2.gameObject.SetActive(true);
@@ -61,6 +63,7 @@ public class RatingModal : MonoBehaviour
 
     public void HideModal()
     {
-        this.gameObject.SetActive(false);
+        ratingModalIsShowed = false;
+        this.transform.GetChild(0).gameObject.SetActive(false);
     }
 }
