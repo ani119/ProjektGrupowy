@@ -8,28 +8,9 @@ public class GameController : MonoBehaviour
     public Modal modal;
     public string userName;
     public bool isModalPositive;
-    bool isWaitingForAnswer = true;
     void Start()
     {
         
-    }
-    void Update()
-    {
-        ModalControl();
-    }
-   
-    public void HideModal()
-    {
-        modal.hideModal();
-        isWaitingForAnswer = true;
-    }
-    private void ModalControl()
-    {
-        modal.setMessage(Player.name, isModalPositive);
-        if (Input.GetKeyDown(KeyCode.Return) && isWaitingForAnswer) 
-            {
-             modal.showModal();
-            }
     }
     public static void clearWater()
     {

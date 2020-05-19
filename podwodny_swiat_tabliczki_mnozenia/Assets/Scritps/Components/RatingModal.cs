@@ -9,6 +9,8 @@ public class RatingModal : MonoBehaviour
     public GameObject star1;
     public GameObject star2;
     public GameObject star3;
+    public InputField answer;
+    public bool ratingModalIsShowed;
     private int total = 0;
     private int tries = 0;
 
@@ -16,7 +18,6 @@ public class RatingModal : MonoBehaviour
     void Start()
     {
         HideModal();
-
         Button btn = closeButton.GetComponent<Button>();
         btn.onClick.AddListener(HideModal);
     }
@@ -35,6 +36,7 @@ public class RatingModal : MonoBehaviour
 
     public void ShowRating(int tries, int total)
     {
+        ratingModalIsShowed = true;
         this.tries = tries;
         this.total = total;
         int accuracy = CalculateAccuracy();
@@ -62,5 +64,7 @@ public class RatingModal : MonoBehaviour
     public void HideModal()
     {
         this.gameObject.SetActive(false);
+        ratingModalIsShowed = false;
+        answer.text = "";
     }
 }

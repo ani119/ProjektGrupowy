@@ -8,41 +8,43 @@ public class Multiplication : MonoBehaviour
     public Text showEquation;
     public InputField answer;
     public RatingModal ratingModal;
-
+    public int totalEquations = 0;
+    public int totalAnswerTries = 0;
     private int multiplicand;
     private int multiplier;
     private string equation;
 
-    public int totalEquations = 0;
-    public int totalAnswerTries = 0;
-
-    // Start is called before the first frame update
     GameController GameController;
-    void Start()
+    Modal modal;
+    void Awake()
     {
         RandomEquation();
         GameController = FindObjectOfType<GameController>();
+        modal = FindObjectOfType<Modal>();
     }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) && !modal.modalIsShowed)
         {
             CheckAnswer();
+            if (totalEquations > 0 && totalEquations % 10 == 0 && GameController.isModalPositive == true)
+            {
+                ratingModal.ShowRating(totalAnswerTries, totalEquations);
+            }
+            else
+            {
+                modal.setMessage(Player.name, GameController.isModalPositive);
+                modal.showModal();
+            }
         }
     }
     public void RandomEquation()
     {
-        multiplicand = Random.Range(1, 11);
-        multiplier = Random.Range(1, 11);
+        multiplicand = Random.Range(0, 11);
+        multiplier = Random.Range(0, 11);
         equation = multiplicand.ToString() + " x " + multiplier.ToString() + " = ";
         showEquation.text = equation;
-
-        if (totalEquations > 0 && totalEquations % 10 == 0)
-        {
-            ratingModal.ShowRating(totalAnswerTries, totalEquations);
-        }
-
         totalEquations++;
     }
     
@@ -55,7 +57,6 @@ public class Multiplication : MonoBehaviour
         {
             GameController.isModalPositive = true;
             GameController.clearWater();
-            RandomEquation();
         }
         else
         {
