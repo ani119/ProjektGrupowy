@@ -8,10 +8,15 @@ public class GameController : MonoBehaviour
     public Modal modal;
     public string userName;
     public bool isModalPositive;
-    void Start()
+
+    void Update()
     {
-        
+        if (Input.GetMouseButton(0)&&modal.modalIsShowed)
+        {
+            modal.hideModal();
+        }
     }
+
     public static void clearWater()
     {
         Transform shoalCopies = GameObject.Find("Canvas/Shoals/ShoalCopies").transform;
@@ -20,4 +25,5 @@ public class GameController : MonoBehaviour
             GameObject.Destroy(shoal.gameObject);
         }
     }
+
 }
