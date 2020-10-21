@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Multiplication : MonoBehaviour
@@ -59,7 +60,10 @@ public class Multiplication : MonoBehaviour
         if (answer.text == (multiplicand * multiplier).ToString())
         {
             GameController.isModalPositive = true;
-            GameController.clearWater();
+            if(SceneManager.GetActiveScene().name=="FishGame")
+            {
+                GameController.clearWater();
+            }
         }
         else
         {
