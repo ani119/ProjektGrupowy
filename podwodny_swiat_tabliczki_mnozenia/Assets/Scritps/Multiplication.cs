@@ -16,16 +16,18 @@ public class Multiplication : MonoBehaviour
 
     GameController GameController;
     Modal modal;
+
     void Awake()
     {
         RandomEquation();
         GameController = FindObjectOfType<GameController>();
         modal = FindObjectOfType<Modal>();
     }
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && !modal.modalIsShowed)
+        if (Input.GetKeyDown(KeyCode.Return) && !modal.modalIsShowed && answer.text!="")
         {
             CheckAnswer();
             if (totalEquations > 0 && totalEquations % 10 == 0 && GameController.isModalPositive == true)
@@ -39,6 +41,7 @@ public class Multiplication : MonoBehaviour
             }
         }
     }
+
     public void RandomEquation()
     {
         multiplicand = Random.Range(0, 11);
