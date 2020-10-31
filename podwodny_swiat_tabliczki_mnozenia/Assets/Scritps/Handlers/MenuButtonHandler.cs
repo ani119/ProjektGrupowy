@@ -13,6 +13,21 @@ public class MenuButtonHandler : MonoBehaviour
 
     public void NumbersClick()
     {
+        SceneManager.LoadScene("LevelsMenu");
         Debug.Log("Cyferki.");
+    }
+
+    public void Level1Click()
+    {
+        SceneManager.LoadScene("NumbersGame");
+    }
+
+    public void Level2Click()
+    {
+        SceneManager.LoadScene("NumbersGame");
+    }
+    public void Level3Click()
+    {
+        SceneManager.LoadScene("NumbersGame");
     }
 }
