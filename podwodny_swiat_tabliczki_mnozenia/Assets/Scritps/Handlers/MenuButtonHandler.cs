@@ -19,15 +19,18 @@ public class MenuButtonHandler : MonoBehaviour
 
     public void Level1Click()
     {
+        GameController.sceneName = "Level1";
         SceneManager.LoadScene("NumbersGame");
     }
 
     public void Level2Click()
     {
+        GameController.sceneName = "Level2";
         SceneManager.LoadScene("NumbersGame");
     }
     public void Level3Click()
     {
+        GameController.sceneName = "Level3";
         SceneManager.LoadScene("NumbersGame");
     }
 }
