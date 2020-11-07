@@ -14,12 +14,14 @@ public class Multiplication : MonoBehaviour
     private int multiplicand;
     private int multiplier;
     private string equation;
+    private int min=0,max=10;
 
     GameController GameController;
     Modal modal;
 
     void Awake()
     {
+        SetRange();
         RandomEquation();
         GameController = FindObjectOfType<GameController>();
         modal = FindObjectOfType<Modal>();
@@ -45,8 +47,8 @@ public class Multiplication : MonoBehaviour
 
     public void RandomEquation()
     {
-        multiplicand = Random.Range(0, 11);
-        multiplier = Random.Range(0, 11);
+        multiplicand = Random.Range(min, max+1);
+        multiplier = Random.Range(min, max+1);
         equation = multiplicand.ToString() + " x " + multiplier.ToString() + " = ";
         showEquation.text = equation;
         totalEquations++;
@@ -68,6 +70,24 @@ public class Multiplication : MonoBehaviour
         else
         {
             GameController.isModalPositive = false;
+        }
+    }
+
+    private void SetRange()
+    {
+        if(GameController.sceneName=="Level1")
+        {
+            max = 3;
+        }
+        else if (GameController.sceneName=="Level2")
+        {
+            min = 4;
+            max = 7;
+        }
+        else if (GameController.sceneName=="Level3")
+        {
+            min = 8;
+            max = 10;
         }
     }
 }

@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     public Modal modal;
     public string userName;
     public bool isModalPositive;
+    public static string sceneName;
 
     void Update()
     {
