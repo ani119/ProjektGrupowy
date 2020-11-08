@@ -9,33 +9,36 @@ public class Multiplication : MonoBehaviour
     public Text showEquation;
     public InputField answer;
     public RatingModal ratingModal;
+    public Modal modal;
     public int totalEquations = 0;
     public int totalAnswerTries = 0;
     private int multiplicand;
     private int multiplier;
     private string equation;
     private int min=0,max=10;
+    private string sign;
 
     GameController GameController;
-    Modal modal;
+    //Modal modal;
 
     void Awake()
     {
         SetRange();
         RandomEquation();
         GameController = FindObjectOfType<GameController>();
-        modal = FindObjectOfType<Modal>();
+        //modal = FindObjectOfType<Modal>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && !modal.modalIsShowed && answer.text!="")
+        if (Input.GetKeyDown(KeyCode.Return) && answer.text!="")
         {
             CheckAnswer();
-            if (totalEquations > 0 && totalEquations % 10 == 0 && GameController.isModalPositive == true)
+            if (totalEquations > 0 && totalEquations % 10 == 0 && !modal.modalIsShowed && GameController.isModalPositive == true)
             {
                 ratingModal.ShowRating(totalAnswerTries, totalEquations);
+                RandomEquation();
             }
             else
             {
@@ -54,6 +57,24 @@ public class Multiplication : MonoBehaviour
         {
             int result = multiplicand * multiplier;
             equation = multiplicand.ToString() + " x       = " + result.ToString();
+        }
+        else if (GameController.sceneName == "SignsGame")
+        {
+            int result = Random.Range(min, max + 1);
+            equation = multiplicand.ToString() + " x " + multiplier.ToString() + "         " + result.ToString();
+            if (multiplicand * multiplier < result)
+            {
+                sign = "<";
+
+            }
+            else if (multiplicand * multiplier > result)
+            {
+                sign = ">";
+            }
+            else if (multiplicand * multiplier == result)
+            {
+                sign = "=";
+            }
         }
         showEquation.text = equation;
         totalEquations++;
@@ -77,6 +98,22 @@ public class Multiplication : MonoBehaviour
             {
                 GameController.isModalPositive = false;
             }
+        }
+        else if (GameController.sceneName == "SignsGame")
+        {
+            if (answer.text == sign)
+            {
+                GameController.isModalPositive = true;
+                if (SceneManager.GetActiveScene().name == "SignsGame")
+                {
+                    GameController.clearWater();
+                }
+            }
+            else
+            {
+                GameController.isModalPositive = false;
+            }
+
         }
         else if (answer.text == (multiplicand * multiplier).ToString())
         {

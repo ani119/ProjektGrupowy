@@ -23,6 +23,12 @@ public class MenuButtonHandler : MonoBehaviour
         SceneManager.LoadScene("BlanksGame");
         Debug.Log("Luki.");
     }
+    public void SignsClick()
+    {
+        GameController.sceneName = "SignsGame";
+        SceneManager.LoadScene("SignsGame");
+        Debug.Log("Znaki");
+    }
 
     public void Level1Click()
     {
