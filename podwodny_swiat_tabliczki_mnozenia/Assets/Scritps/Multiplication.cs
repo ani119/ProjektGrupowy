@@ -17,14 +17,37 @@ public class Multiplication : MonoBehaviour
     private string equation;
     private int min=0,max=10;
     private string sign;
+    private string message;
 
     GameController GameController;
-
+    //Modal modal;
+    private void Start()
+    {
+        if (GameController.sceneName == "FishGame")
+        {
+            message = "Rybki Rybeczki Rybunie";
+        }
+        else if (GameController.sceneName == "Level1" || GameController.sceneName == "Level2" || GameController.sceneName == "Level3")
+        {
+            message = " Wpisz poprawny wynik równania ";
+        }
+        else if (GameController.sceneName == "BlanksGame")
+        {
+            message = " Wpisz brakującą cyfrę, tak aby równanie było poprawne ";
+        }
+        else if (GameController.sceneName == "SignsGame")
+        {
+            message = " Wpisz odpowiedni znak < lub = lub >, tak aby równanie było poprawne ";
+        }
+        modal.startMessage(message);
+        modal.showModal();
+    }
     void Awake()
     {
         SetRange();
         RandomEquation();
         GameController = FindObjectOfType<GameController>();
+        //modal = FindObjectOfType<Modal>();
     }
 
     // Update is called once per frame
@@ -58,7 +81,7 @@ public class Multiplication : MonoBehaviour
         }
         else if (GameController.sceneName == "SignsGame")
         {
-            int result = Random.Range(min, 100 + 1);
+            int result = Random.Range(min, max + 1);
             equation = multiplicand.ToString() + " x " + multiplier.ToString() + "         " + result.ToString();
             if (multiplicand * multiplier < result)
             {
