@@ -745,8 +745,7 @@ MonoBehaviour:
   showEquation: {fileID: 1744686146}
   answer: {fileID: 1453974562}
   ratingModal: {fileID: 27272149}
-  min: 0
-  max: 10
+  modal: {fileID: 2067929549}
   totalEquations: 0
   totalAnswerTries: 0
 --- !u!222 &389638249
