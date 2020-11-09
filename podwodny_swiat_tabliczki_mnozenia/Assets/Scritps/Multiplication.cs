@@ -25,7 +25,7 @@ public class Multiplication : MonoBehaviour
     {
         if (GameController.sceneName == "FishGame")
         {
-            message = "Rybki Rybeczki Rybunie";
+            message = "Wpisz wynik rownania. Jako pomoc wykorzystaj rybki na dole ekranu. Przesuwaj je i usuwaj do woli.";
         }
         else if (GameController.sceneName == "Level1" || GameController.sceneName == "Level2" || GameController.sceneName == "Level3")
         {
