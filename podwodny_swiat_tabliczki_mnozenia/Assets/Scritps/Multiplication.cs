@@ -32,7 +32,7 @@ public class Multiplication : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && answer.text!="")
+        if (Input.GetKeyDown(KeyCode.Return) && !modal.modalIsShowed && answer.text!="")
         {
             CheckAnswer();
             if (totalEquations > 0 && totalEquations % 10 == 0 && !modal.modalIsShowed && GameController.isModalPositive == true)
@@ -86,7 +86,7 @@ public class Multiplication : MonoBehaviour
         Debug.Log("Total aswers: " + totalAnswerTries + " / " + totalEquations);
         if (GameController.sceneName == "BlanksGame")
         {
-            if (answer.text ==  multiplier.ToString())
+            if ((answer.text ==  multiplier.ToString()) || multiplicand == 0)
             {
                 GameController.isModalPositive = true;
                 if (SceneManager.GetActiveScene().name == "BlanksGame")
