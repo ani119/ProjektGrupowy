@@ -50,6 +50,11 @@ public class Multiplication : MonoBehaviour
         multiplicand = Random.Range(min, max+1);
         multiplier = Random.Range(min, max+1);
         equation = multiplicand.ToString() + " x " + multiplier.ToString() + " = ";
+        if(GameController.sceneName == "BlanksGame")
+        {
+            int result = multiplicand * multiplier;
+            equation = multiplicand.ToString() + " x       = " + result.ToString();
+        }
         showEquation.text = equation;
         totalEquations++;
     }
@@ -58,8 +63,22 @@ public class Multiplication : MonoBehaviour
     {
         totalAnswerTries++;
         Debug.Log("Total aswers: " + totalAnswerTries + " / " + totalEquations);
-
-        if (answer.text == (multiplicand * multiplier).ToString())
+        if (GameController.sceneName == "BlanksGame")
+        {
+            if (answer.text ==  multiplier.ToString())
+            {
+                GameController.isModalPositive = true;
+                if (SceneManager.GetActiveScene().name == "BlanksGame")
+                {
+                    GameController.clearWater();
+                }
+            }
+            else
+            {
+                GameController.isModalPositive = false;
+            }
+        }
+        else if (answer.text == (multiplicand * multiplier).ToString())
         {
             GameController.isModalPositive = true;
             if(SceneManager.GetActiveScene().name=="FishGame")

@@ -20,10 +20,13 @@ public class GameController : MonoBehaviour
 
     public static void clearWater()
     {
+        if(GameObject.Find("Canvas/Shoals/ShoalCopies"))
+        {
         Transform shoalCopies = GameObject.Find("Canvas/Shoals/ShoalCopies").transform;
         foreach (Transform shoal in shoalCopies)
         {
             GameObject.Destroy(shoal.gameObject);
+        }
         }
     }
 

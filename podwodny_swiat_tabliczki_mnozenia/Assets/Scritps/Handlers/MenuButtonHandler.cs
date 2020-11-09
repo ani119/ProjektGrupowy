@@ -17,6 +17,13 @@ public class MenuButtonHandler : MonoBehaviour
         Debug.Log("Cyferki.");
     }
 
+    public void BlanksClick()
+    {
+        GameController.sceneName = "BlanksGame";
+        SceneManager.LoadScene("BlanksGame");
+        Debug.Log("Luki.");
+    }
+
     public void Level1Click()
     {
         GameController.sceneName = "Level1";
