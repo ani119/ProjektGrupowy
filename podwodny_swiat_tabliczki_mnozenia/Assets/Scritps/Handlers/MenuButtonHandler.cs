@@ -30,6 +30,13 @@ public class MenuButtonHandler : MonoBehaviour
         Debug.Log("Znaki");
     }
 
+    public void TestClick()
+    {
+        GameController.sceneName = "TestGame";
+        SceneManager.LoadScene("TestGame");
+        Debug.Log("Test.");
+    }
+
     public void Level1Click()
     {
         GameController.sceneName = "Level1";

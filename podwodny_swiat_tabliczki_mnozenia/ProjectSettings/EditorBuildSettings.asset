@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SignsGame.unity
     guid: c0681b15a40d5c94f96706e3d70d8996
+  - enabled: 1
+    path: Assets/Scenes/TestGame.unity
+    guid: a2d19263ace3781498581d34025f4527
   m_configObjects: {}
