@@ -63,7 +63,7 @@ public class Multiplication : MonoBehaviour
 
             if (SceneManager.GetActiveScene().name == "TestGame")
             {
-                equationsModulo = 3;
+                equationsModulo = 20;
             }
 
             if (totalEquations > 0 && totalEquations % equationsModulo == 0 && !modal.modalIsShowed && GameController.isModalPositive == true)
