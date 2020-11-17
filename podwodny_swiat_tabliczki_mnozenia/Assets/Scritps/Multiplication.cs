@@ -20,7 +20,6 @@ public class Multiplication : MonoBehaviour
     private string message;
 
     GameController GameController;
-    //Modal modal;
     private void Start()
     {
         if (GameController.sceneName == "FishGame")
@@ -47,7 +46,6 @@ public class Multiplication : MonoBehaviour
         SetRange();
         RandomEquation();
         GameController = FindObjectOfType<GameController>();
-        //modal = FindObjectOfType<Modal>();
     }
 
     // Update is called once per frame
@@ -81,7 +79,7 @@ public class Multiplication : MonoBehaviour
         }
         else if (GameController.sceneName == "SignsGame")
         {
-            int result = Random.Range(min, max + 1);
+            int result = Random.Range(min, 100 + 1);
             equation = multiplicand.ToString() + " x " + multiplier.ToString() + "         " + result.ToString();
             if (multiplicand * multiplier < result)
             {
