@@ -23,6 +23,10 @@ public class ButtonHandler : MonoBehaviour {
         {
             SceneManager.LoadScene("MainScene");
         }
+        if (EventSystem.current.currentSelectedGameObject.name == "BackToRangeChoice")
+        {
+            SceneManager.LoadScene("LevelsMenu");
+        }
     }
 }
 

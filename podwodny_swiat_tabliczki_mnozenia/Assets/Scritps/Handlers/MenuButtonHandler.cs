@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class MenuButtonHandler : MonoBehaviour
 {
+
     public void FishClick()
     {
+        GameController.sceneName = "FishGame";
         SceneManager.LoadScene("FishGame");
         Debug.Log("Rybki, rybeczki, rybunie...");
     }

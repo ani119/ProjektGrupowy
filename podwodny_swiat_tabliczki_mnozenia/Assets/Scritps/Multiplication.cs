@@ -17,9 +17,30 @@ public class Multiplication : MonoBehaviour
     private string equation;
     private int min=0,max=10;
     private string sign;
+    private string message;
 
     GameController GameController;
-
+    private void Start()
+    {
+        if (GameController.sceneName == "FishGame")
+        {
+            message = "Wpisz wynik rownania. Jako pomoc wykorzystaj rybki na dole ekranu. Przesuwaj je i usuwaj do woli.";
+        }
+        else if (GameController.sceneName == "Level1" || GameController.sceneName == "Level2" || GameController.sceneName == "Level3")
+        {
+            message = " Wpisz poprawny wynik równania ";
+        }
+        else if (GameController.sceneName == "BlanksGame")
+        {
+            message = " Wpisz brakującą cyfrę, tak aby równanie było poprawne ";
+        }
+        else if (GameController.sceneName == "SignsGame")
+        {
+            message = " Wpisz odpowiedni znak < lub = lub >, tak aby równanie było poprawne ";
+        }
+        modal.startMessage(message);
+        modal.showModal();
+    }
     void Awake()
     {
         SetRange();

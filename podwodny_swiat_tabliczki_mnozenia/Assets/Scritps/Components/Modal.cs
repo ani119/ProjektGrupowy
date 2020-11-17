@@ -20,6 +20,7 @@ public class Modal : MonoBehaviour
     
     public void setMessage(string playerName, bool isPositive)
     {
+        setBackgroundColor();
         setModalTextContent(playerName, isPositive);
         setModalTextColor(isPositive);
         IsPositive = isPositive;
@@ -60,5 +61,10 @@ public class Modal : MonoBehaviour
     private void setBackgroundColor()
     {
         GetComponentInChildren<Image>().color=new Color(0.5f, 0.5f, 0.5f, 0.3f);
+    }
+    public void startMessage(string message)
+    {
+        GetComponentInChildren<Image>().color = new Color(0.7f, 0.7f, 1f, 0.8f);
+        GetComponentInChildren<Text>().text = message;
     }
 }
