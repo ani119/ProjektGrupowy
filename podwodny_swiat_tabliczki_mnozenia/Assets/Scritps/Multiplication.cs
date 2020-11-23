@@ -18,6 +18,7 @@ public class Multiplication : MonoBehaviour
     private int min=0,max=10;
     private string sign;
     private string message;
+    private System.DateTime StartTime;
 
     GameController GameController;
     private void Start()
@@ -26,7 +27,7 @@ public class Multiplication : MonoBehaviour
         {
             message = "Wpisz wynik rownania. Jako pomoc wykorzystaj rybki na dole ekranu. Przesuwaj je i usuwaj do woli.";
         }
-        else if (GameController.sceneName == "Level1" || GameController.sceneName == "Level2" || GameController.sceneName == "Level3")
+        else if (GameController.sceneName == "Level1" || GameController.sceneName == "Level2" || GameController.sceneName == "Level3" || GameController.sceneName == "TestGame")
         {
             message = " Wpisz poprawny wynik równania ";
         }
@@ -40,23 +41,39 @@ public class Multiplication : MonoBehaviour
         }
         modal.startMessage(message);
         modal.showModal();
-    }
-    void Awake()
-    {
+
+        GameController = FindObjectOfType<GameController>();
+
+        this.StartTime = System.DateTime.Now;
         SetRange();
         RandomEquation();
-        GameController = FindObjectOfType<GameController>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && !modal.modalIsShowed && answer.text!="")
+        if (Input.GetKeyDown(KeyCode.Return) && !modal.modalIsShowed && answer.text != "")
         {
             CheckAnswer();
-            if (totalEquations > 0 && totalEquations % 10 == 0 && !modal.modalIsShowed && GameController.isModalPositive == true)
+
+            int equationsModulo = 10;
+
+            if (SceneManager.GetActiveScene().name == "TestGame")
             {
-                ratingModal.ShowRating(totalAnswerTries, totalEquations);
+                equationsModulo = 2;
+            }
+
+            if (totalEquations > 0 && totalEquations % equationsModulo == 0 && !modal.modalIsShowed && GameController.isModalPositive == true)
+            {
+
+
+                if (SceneManager.GetActiveScene().name == "TestGame")
+                {
+                    System.TimeSpan time = System.DateTime.Now - this.StartTime;
+                    ratingModal.ShowRating(totalAnswerTries, totalEquations, time);
+                }
+                else
+                {
+                    ratingModal.ShowRating(totalAnswerTries, totalEquations);
+                }
                 RandomEquation();
             }
             else
