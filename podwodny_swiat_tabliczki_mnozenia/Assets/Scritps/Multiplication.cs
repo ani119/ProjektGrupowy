@@ -21,7 +21,8 @@ public class Multiplication : MonoBehaviour
     private System.DateTime StartTime;
 
     GameController GameController;
-    private void Start()
+
+    void Start()
     {
         if (GameController.sceneName == "FishGame")
         {
@@ -48,6 +49,7 @@ public class Multiplication : MonoBehaviour
         SetRange();
         RandomEquation();
     }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return) && !modal.modalIsShowed && answer.text != "")
@@ -56,7 +58,7 @@ public class Multiplication : MonoBehaviour
 
             int equationsModulo = 10;
 
-            if (SceneManager.GetActiveScene().name == "TestGame")
+            if (GameController.sceneName == "TestGame")
             {
                 equationsModulo = 2;
             }
@@ -65,7 +67,7 @@ public class Multiplication : MonoBehaviour
             {
 
 
-                if (SceneManager.GetActiveScene().name == "TestGame")
+                if (GameController.sceneName == "TestGame")
                 {
                     System.TimeSpan time = System.DateTime.Now - this.StartTime;
                     ratingModal.ShowRating(totalAnswerTries, totalEquations, time);

@@ -38,7 +38,15 @@ public class RatingModal : MonoBehaviour
     public void ShowRating(int tries, int total, TimeSpan time)
     {
         this.ShowRating(tries, total);
-        text.text += Environment.NewLine + " Czas testu: " + time.Minutes + ":" + time.Seconds + "s"
+
+        string timeStr = time.Seconds + "s";
+
+        if(time.Minutes > 0)
+        {
+            timeStr = time.Minutes + "m " + timeStr;
+        }
+
+        text.text += Environment.NewLine + " Czas testu: " + timeStr
                    + Environment.NewLine + " Poprawne odpowiedzi: " + total
                    + Environment.NewLine + " Błędne odpowiedzi: " + (tries - total);
     }
