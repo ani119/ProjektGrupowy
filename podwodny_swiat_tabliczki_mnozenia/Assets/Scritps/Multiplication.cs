@@ -31,6 +31,10 @@ public class Multiplication : MonoBehaviour
         else if (GameController.sceneName == "Level1" || GameController.sceneName == "Level2" || GameController.sceneName == "Level3" || GameController.sceneName == "TestGame")
         {
             message = " Wpisz poprawny wynik równania ";
+            if(GameController.sceneName=="TestGame")
+            {
+                GameObject.Find("BackToRangeChoice").GetComponentInChildren<Text>().text = "Cofnij";
+            }
         }
         else if (GameController.sceneName == "BlanksGame")
         {
