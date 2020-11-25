@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System;
 
 public class RatingModal : MonoBehaviour
 {
@@ -32,6 +33,22 @@ public class RatingModal : MonoBehaviour
     {
         double acc = (double)total / tries;
         return (int)(acc * 100);
+    }
+
+    public void ShowRating(int tries, int total, TimeSpan time)
+    {
+        this.ShowRating(tries, total);
+
+        string timeStr = time.Seconds + "s";
+
+        if(time.Minutes > 0)
+        {
+            timeStr = time.Minutes + "m " + timeStr;
+        }
+
+        text.text += Environment.NewLine + " Czas testu: " + timeStr
+                   + Environment.NewLine + " Poprawne odpowiedzi: " + total
+                   + Environment.NewLine + " Błędne odpowiedzi: " + (tries - total);
     }
 
     public void ShowRating(int tries, int total)
@@ -68,3 +85,5 @@ public class RatingModal : MonoBehaviour
         answer.text = "";
     }
 }
+
+
