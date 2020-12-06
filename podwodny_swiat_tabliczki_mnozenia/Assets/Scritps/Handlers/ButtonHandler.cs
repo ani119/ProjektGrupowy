@@ -13,7 +13,14 @@ public class ButtonHandler : MonoBehaviour {
         if(EventSystem.current.currentSelectedGameObject.name == "play_button")
         {
             Debug.Log("GRAJ");
-            SceneManager.LoadScene("NameScene");
+            if (Player.name != "")
+            {
+                SceneManager.LoadScene("Menu");
+            }
+            else
+            {
+                SceneManager.LoadScene("NameScene");
+            }
         }
         else if (EventSystem.current.currentSelectedGameObject.name == "exit_button")
         {
