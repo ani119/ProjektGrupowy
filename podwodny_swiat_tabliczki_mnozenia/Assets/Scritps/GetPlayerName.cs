@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GetPlayerName : MonoBehaviour
 {
-    public GameObject inputField; 
+    public GameObject inputField;
 
     public void Button_Click()
     {
