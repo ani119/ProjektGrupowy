@@ -88,8 +88,8 @@ public class Multiplication : MonoBehaviour
                 modal.showModal();
             }
         }
-        else if ((modal.modalIsShowed)&& (Input.GetMouseButton(0)) || (Input.GetKeyDown(KeyCode.Return)))
-                {
+        else if ((modal.modalIsShowed)&& (Input.GetMouseButton(0) || (Input.GetKeyDown(KeyCode.Return))))
+        {
             modal.hideModal();
         }
     }
