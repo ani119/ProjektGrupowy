@@ -66,8 +66,8 @@ public class Modal : MonoBehaviour
         GetComponentInChildren<Text>().rectTransform.localPosition = new Vector3(-10, 134, 0);
         if(GameController.sceneName=="FishGame")
         {
-            GetComponentInChildren<Image>().rectTransform.localPosition = new Vector3(19, -27 / 10, 0);
-            GetComponentInChildren<Text>().rectTransform.localPosition = new Vector3(19, -27 / 10, 0);
+            GetComponentInChildren<Image>().rectTransform.localPosition = new Vector3(15, -27 / 10, 0);
+            GetComponentInChildren<Text>().rectTransform.localPosition = new Vector3(15, -27 / 10, 0);
         }
     }
     public void startMessage(string message)
@@ -75,7 +75,7 @@ public class Modal : MonoBehaviour
         GetComponentInChildren<Image>().color = new Color(0.7f, 0.7f, 1f, 0.9f);
         GetComponentInChildren<Text>().text = message;
         GetComponentInChildren<Image>().rectTransform.sizeDelta = new Vector2(420, 150);
-        GetComponentInChildren<Image>().rectTransform.localPosition = new Vector3(19, -27/10, 0);
-        GetComponentInChildren<Text>().rectTransform.localPosition = new Vector3(19, -27/10, 0);
+        GetComponentInChildren<Image>().rectTransform.localPosition = new Vector3(15, -27/10, 0);
+        GetComponentInChildren<Text>().rectTransform.localPosition = new Vector3(15, -27/10, 0);
     }
 }
