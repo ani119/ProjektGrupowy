@@ -12,10 +12,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0)&&modal.modalIsShowed)
-        {
-            modal.hideModal();
-        }
+      
     }
 
     public static void clearWater()
