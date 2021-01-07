@@ -13,7 +13,7 @@ public class Multiplication : MonoBehaviour
     public Modal modal;
     public int totalEquations = 0;
     public int totalAnswerTries = 0;
-    private int waitSeconds = 3;
+    private int waitSeconds = 2;
     private int multiplicand;
     private int multiplier;
     private string equation;
@@ -90,11 +90,9 @@ public class Multiplication : MonoBehaviour
                 modal.setMessage(Player.name, GameController.isModalPositive);
                 modal.showModal();
                 modalAppears = System.DateTime.Now;
-                //Thread.Sleep(1000 * waitSeconds);
-                //modal.hideModal();
             }
         }
-        else if ((modal.modalIsShowed)&& (Input.GetMouseButton(0) || (Input.GetKeyDown(KeyCode.Return)||((System.DateTime.Now-modalAppears).Seconds==waitSeconds))))
+        else if ((modal.modalIsShowed)&& (Input.GetMouseButton(0) || (Input.GetKeyDown(KeyCode.Return)||((System.DateTime.Now-modalAppears).Seconds== waitSeconds))))
         {
             modal.hideModal();
         }
