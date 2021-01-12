@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ public class Multiplication : MonoBehaviour
     public Modal modal;
     public int totalEquations = 0;
     public int totalAnswerTries = 0;
+    private int waitSeconds = 2;
     private int multiplicand;
     private int multiplier;
     private string equation;
@@ -19,6 +21,7 @@ public class Multiplication : MonoBehaviour
     private string sign;
     private string message;
     private System.DateTime StartTime;
+    private System.DateTime modalAppears;
 
     GameController GameController;
 
@@ -86,9 +89,10 @@ public class Multiplication : MonoBehaviour
             {
                 modal.setMessage(Player.name, GameController.isModalPositive);
                 modal.showModal();
+                modalAppears = System.DateTime.Now;
             }
         }
-        else if ((modal.modalIsShowed)&& (Input.GetMouseButton(0) || (Input.GetKeyDown(KeyCode.Return))))
+        else if ((modal.modalIsShowed)&& (Input.GetMouseButton(0) || (Input.GetKeyDown(KeyCode.Return)||((System.DateTime.Now-modalAppears).Seconds== waitSeconds))))
         {
             modal.hideModal();
         }
