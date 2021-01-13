@@ -41,7 +41,7 @@ public class Multiplication : MonoBehaviour
         }
         else if (GameController.sceneName == "BlanksGame")
         {
-            message = " Wpisz brakującą cyfrę, tak aby równanie było poprawne. ";
+            message = " Wpisz brakującą liczbę, tak aby równanie było poprawne. ";
         }
         else if (GameController.sceneName == "SignsGame")
         {
